@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymApp.Pages.PageStep5"
+             Title="PageStep5" Shell.NavBarIsVisible="False" BackgroundColor="#6e9cd2" HeightRequest="700" WidthRequest="400">
+    <VerticalStackLayout>
+        <Label Text="Step 5/5" Style="{StaticResource txtStyle}" Margin="0,100,0,0"/>
+        <Label Text="What's your height and weight?" Style="{StaticResource txtStyle2}" Margin="0,30"/>
+
+        <Frame WidthRequest="300" HeightRequest="60" Style="{StaticResource frmStyle2}">
+            <Entry Placeholder="Height" Style="{StaticResource entryStyle}" HeightRequest="44" Margin="-6,-10,0,0" x:Name="entryHeight"/>
+        </Frame>
+        
+        <Frame WidthRequest="300" HeightRequest="60" Style="{StaticResource frmStyle}">
+            <Entry Placeholder="Weight" Style="{StaticResource entryStyle}" Margin="-6,-10,0,0" x:Name="entryWeight"/>
+        </Frame>
+
+        <Button Text="Next" Style="{StaticResource btnStyle4}" Margin="0,90" HeightRequest="70" x:Name="btnNext" Clicked="ButtonNext_Click"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymApp.Pages.PageStep2"
+             Title="PageStep2" Shell.NavBarIsVisible="False" BackgroundColor="#6e9cd2" HeightRequest="700" WidthRequest="400">
+    <VerticalStackLayout>
+        <Label Text="Step 2/5" Style="{StaticResource txtStyle}" Margin="0,100,0,0"/>
+        <Label Text="What is your gender?" Style="{StaticResource txtStyle2}" Margin="0,30"/>
+
+        <HorizontalStackLayout HorizontalOptions="Center" Margin="0,20,0,60">
+            <StackLayout Margin="0,0,80,0">
+                <Button Style="{StaticResource btnStyle}" x:Name="btnFemale" HeightRequest="110" WidthRequest="110" CornerRadius="100" Clicked="ButtonFemale_Clicked"/>
+                <ImageButton Source="D:\source\GymApp\Resources\Images\image_female.png" Margin="-4,-130,0,30" WidthRequest="90" HeightRequest="90" CornerRadius="100" Clicked="ButtonFemale_Clicked"/>
+                <Label Text="Female" Style="{StaticResource txtStyle2}" FontSize="25"/>
+            </StackLayout>
+            <StackLayout>
+                <Button Style="{StaticResource btnStyle}" x:Name="btnMale" HeightRequest="110" WidthRequest="110" CornerRadius="100" Clicked="ButtonMale_Clicked"/>
+                <ImageButton Source="D:\source\GymApp\Resources\Images\image_male.png" Margin="0,-125,-4,30" WidthRequest="90" HeightRequest="90" CornerRadius="100" Clicked="ButtonMale_Clicked"/>
+                <Label Text="Male" Style="{StaticResource txtStyle2}" FontSize="25" Margin="0,-5,0,0"/>
+            </StackLayout>
+        </HorizontalStackLayout>
+        <Button Text="Next" Style="{StaticResource btnStyle}" Clicked="ButtonMove_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

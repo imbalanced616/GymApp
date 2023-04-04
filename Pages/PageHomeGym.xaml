@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymApp.Pages.PageHomeGym"
+             Title="PageHomeGym" Shell.NavBarIsVisible="False" BackgroundColor="#6e9cd2" HeightRequest="700" WidthRequest="400">
+    <VerticalStackLayout>
+        <Image Source="fitness_logo.png" WidthRequest="170" Margin="0,40,0,-50"/>
+        <Label Text="Home&#x0a;Gym" Style="{StaticResource txtStyle}" HorizontalTextAlignment="Center"/>
+        <Frame WidthRequest="250" HeightRequest="60" Style="{StaticResource frmStyle}" Margin="0,25">
+            <HorizontalStackLayout>
+                <Line WidthRequest="10" HeightRequest="3" Margin="20,0,0,0"/>
+                <Entry Placeholder="Login" Style="{StaticResource entryStyle}" WidthRequest="180" x:Name="entryLogin"/>
+            </HorizontalStackLayout>
+        </Frame>
+        <Image Source="login_icon.png" WidthRequest="35" Margin="-200,-74,0,40"/>
+        <Frame WidthRequest="250" HeightRequest="60" Style="{StaticResource frmStyle}" Margin="0,0,0,25">
+            <HorizontalStackLayout>
+                <Line WidthRequest="10" HeightRequest="3" Margin="20,0,0,0"/>
+                <Entry Placeholder="Password" Style="{StaticResource entryStyle}" WidthRequest="180" x:Name="entryPassword" IsPassword="True"/>
+            </HorizontalStackLayout>
+        </Frame>
+        <Image Source="password_icon.png" WidthRequest="35" Margin="-200,-74,0,0"/>
+        <Button Text="Sign In" Style="{StaticResource btnStyle4}" Margin="0,70,0,10" WidthRequest="250" HeightRequest="50" CornerRadius="30" x:Name="btnNext"/>
+        <Label Text="Sign Up" Style="{StaticResource txtStyle2}" HorizontalTextAlignment="Center" TextDecorations="Underline"/>
+        <Label Text="Skip" Style="{StaticResource txtStyle2}" HorizontalTextAlignment="Center" TextDecorations="Underline" Margin="0,30,0,0" FontSize="14"/>
+    </VerticalStackLayout>
+</ContentPage>

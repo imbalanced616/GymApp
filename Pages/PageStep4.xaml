@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymApp.Pages.PageStep4"
+             Title="PageStep4" Shell.NavBarIsVisible="False" BackgroundColor="#6e9cd2" HeightRequest="700" WidthRequest="400">
+    <VerticalStackLayout>
+        <Label Text="Step 4/5" Style="{StaticResource txtStyle}" Margin="0,100,0,0"/>
+        <Label Text="How often do you exercise?" Style="{StaticResource txtStyle2}" Margin="0,30"/>
+
+        <Button Text="Newbie&#x0a;"  Style="{StaticResource btnStyle4}" x:Name="btnNewbie" Clicked="btnNewbie_Clicked"/>
+        <Button Text="Just getting started"  Margin="0,-55,0,17" Style="{StaticResource btnStyle5}" Clicked="btnNewbie_Clicked"/>
+        
+        <Button Text="Keep on&#x0a;" Style="{StaticResource btnStyle4}" x:Name="btnKeepOn" Clicked="btnKeepOn_Clicked"/>
+        <Button Text="1-2 times a week"  Margin="0,-55,0,17" Style="{StaticResource btnStyle5}" Clicked="btnKeepOn_Clicked"/>
+        
+        <Button Text="Advanced&#x0a;" Style="{StaticResource btnStyle4}" x:Name="btnAdvenced" Clicked="btnAdvenced_Clicked"/>
+        <Button Text="More than 3 times a week"  Margin="0,-55,0,17" Style="{StaticResource btnStyle5}" Clicked="btnAdvenced_Clicked"/>
+        
+        <Button Text="Next" Style="{StaticResource btnStyle4}" Margin="0,20" HeightRequest="70" x:Name="btnNext" Clicked="btnNext_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
